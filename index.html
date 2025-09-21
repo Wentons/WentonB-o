@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>WENTON</title>
+<link href="https://fonts.googleapis.com/css2?family=VT323&family=Orbitron:wght@700&display=swap" rel="stylesheet"/>
+<style>
+*{overflow:hidden;margin:0;padding:0}html,body{height:100%;cursor:default}body{font-family:'VT323',monospace;background:#000;color:#fff;position:relative}video#back{position:fixed;top:0;left:0;width:100%;height:100%;object-fit:cover;filter:brightness(1.2) contrast(1.1);z-index:-1}#main{position:fixed;top:0;left:0;width:100%;height:100%;display:table;text-align:center;background:rgba(0,0,0,.5);z-index:1}.fof{display:table-cell;vertical-align:middle}.fof h1{font-size:10vmin;color:#f00;text-shadow:0 0 15px #900;margin:20px 0;animation:none}.fof h2{font-size:2.5vmin;color:#00ccff;text-shadow:0 0 8px #00ccff;margin:10px 0}.fof h3,.fof h4{font-size:2.5vmin;color:#00ff00;text-shadow:0 0 8px #00ff00;margin:10px 0}.hacked-message{color:red;font-weight:bold;font-size:5vmin;text-decoration:none;margin-top:20px}.hacker-rain{position:fixed;top:0;left:0;width:100%;height:100%;z-index:2;pointer-events:none}.hacker-rain::before{content:"0101010101010101010101";position:absolute;top:-200%;width:300%;height:300%;opacity:.2;animation:rain-fall 55s linear infinite;white-space:nowrap;color:#00ff00;font-family:'VT323',monospace;font-size:2.5vmin;text-shadow:0 0 5px #00ff00}.hacker-rain::after{content:"0101010101010101010101";position:absolute;top:-150%;width:200%;height:200%;opacity:.15;animation:rain-fall 75s linear infinite;white-space:nowrap;color:#f0f;font-family:'VT323',monospace;font-size:2.6vmin;text-shadow:0 0 5px #f0f}@keyframes rain-fall{0%{transform:translateY(0)}100%{transform:translateY(150vh)}}
+</style>
+</head>
+<body>
+<div class="hacker-rain"></div>
+
+<video id="back" autoplay loop muted playsinline>
+<source src="https://tikcdn.io/ssstik/7421275884918721797?st=xkyfX-sAgu5hOfbOzpr20Q&e=1758473102" type="video/mp4"/>
+</video>
+
+<div id="main">
+<div class="fof">
+<h1>H4CKED BY WENTON</h1>
+<h2>Web | Coder | CyberSecurity</h2>
+<h3>Ne mutlu Türk'üm diyene!</h3>
+<h4>DUO : ayse</h4>
+<br/>
+<p class="hacked-message">TURKISH HACKER</p>
+</div>
+</div>
+
+<script>
+const video=document.getElementById("back");
+video.play().catch(()=>{}); 
+document.body.addEventListener("click",()=>{
+video.muted=false;
+video.play().catch(()=>{});
+});
+</script>
+</body>
+</html>
